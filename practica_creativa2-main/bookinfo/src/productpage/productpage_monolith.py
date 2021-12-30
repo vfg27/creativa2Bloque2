@@ -449,6 +449,7 @@ def fetch_details_from_external_service(isbn, id, headers):
 
     return {
         'id' : id,
+        'equipo' : os.environ['GROUP_NUMBER'],
         'author': book['authors'][0],
         'year': book['publishedDate'],
         'type' : type_b,
